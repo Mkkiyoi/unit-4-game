@@ -1,0 +1,7 @@
+* {
+    border: 2px dashed blue;
+}
+
+body {
+    background-image: url('../images/background.jpg');
+}
