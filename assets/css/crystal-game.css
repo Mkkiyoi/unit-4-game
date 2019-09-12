@@ -1,0 +1,23 @@
+img {
+    width: 100px;
+}
+
+#header {
+    background: #2bd3f6;
+}
+
+#directions {
+    background: #DFCAAE;
+}
+
+#random-score-container, #win-loss {
+    background: #4ce79d;
+}
+
+.total-score {
+    background: #4aaaab;
+}
+
+#score {
+    height: 50px;
+}
