@@ -1,23 +1,44 @@
+body {
+    /* Visual */
+    background-image: url('../images/folk-pattern.png');
+}
+
 img {
+    /* Visual */
     width: 100px;
 }
 
 #header {
+    /* Visual */
     background: #2bd3f6;
 }
 
 #directions {
+    /* Visual */
     background: #DFCAAE;
 }
 
 #random-score-container, #win-loss {
+    /* Visual */
     background: #4ce79d;
 }
 
+.crystal {
+    /* Visual */
+    background: white;
+}
+
+.crystal:hover {
+    /* Visual */
+    cursor: pointer;
+}
+
 .total-score {
+    /* Visual */
     background: #4aaaab;
 }
 
 #score {
+    /* Visual */
     height: 50px;
 }
