@@ -140,7 +140,7 @@
         isEnemyDefeated: function() {
             if (starWarsGame.defender.hitpoints <= 0) {
                 $('#' + starWarsGame.defender.name).appendTo('#defeated');
-                $('#enemies div').on('click', starWarsGame.defend);
+                $('#enemies div').on('click', starWarsGame.chooseEnemy);
                 $('#attack').off('click');
                 if (starWarsGame.enemies.length === 0) {
                     console.log('Won the game')
