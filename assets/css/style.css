@@ -1,7 +1,41 @@
-* {
-    border: 2px dashed blue;
+body {
+    background-image: url('../images/background.jpg');
 }
 
-/* body {
-    background-image: url('../images/background.jpg');
-} */
+.character {
+    /* Visual */
+    height: 170px;
+    background: white;
+
+    /* Box Model */
+    border: 2px Solid Green;
+    padding: 10px;
+
+    /* Typography */
+    text-align: center;
+}
+
+.character img {
+    /* Visual */
+    height: 80px;
+    width: 120px;
+
+}
+
+h4 {
+    /* Typography */
+    color: white;
+}
+
+#enemies {
+    /* Visual */
+    height: 170px;
+}
+
+#enemies div, #defeated div {
+    /* Positioning */
+    float: left;
+
+    /* Visual */
+    background: red;
+}

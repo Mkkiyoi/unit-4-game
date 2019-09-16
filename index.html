@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Star Wars RPG</title>
 
+    <!-- Linking reset.css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
     <!-- Linking Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -16,7 +19,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- Linking Stylesheets -->
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
     <!-- Linking Javascript -->
@@ -24,60 +26,65 @@
 
 </head>
 <body>
-    <div class="container">
+    <div class="container float-left">
         <div class="row">
-            <div class="col-12"></div>
+            <div class="col-12">
+                <div class="row" id="characters">
+                    <div class="col-2 character" id="obiwan" data-ap="4" data-hp="120">
+                        <p>Obi-Wan Kenobi</p>
+                        <img src="assets/images/obiwan.jpg" class="img-fluid" alt="Obi-Wan Kenobi">
+                        <p id="obiwan-hp">120</p>
+                    </div>
+                    <div class="col-2 character" id="luke" data-ap="6" data-hp="100">
+                        <p>Luke Skywalker</p>
+                        <img src="assets/images/luke.jpg" class="img-fluid " alt="Luke Skywalker">
+                        <p id="luke-hp">100</p>
+                    </div>
+                    <div class="col-2 character" id="sidious" data-ap="2" data-hp="150">
+                        <p>Darth Sidious</p>
+                        <img src="assets/images/sidious.png" class="img-fluid" alt="Darth Sidious">
+                        <p id="sidious-hp">150</p>
+                    </div>
+                    <div class="col-2 character" id="maul" data-ap="1" data-hp="180">
+                        <p>Darth Maul</p>
+                        <img src="assets/images/maul.jpeg" class="img-fluid" alt="Darth Maul">
+                        <p id="maul-hp">180</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h4>Your Character</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div id="enemies"></div>
+                        <h4>Enemies Available To Attack</h4>
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h4>Fight Section</h4>
+                        <button class="button" id="attack">Attack</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12" id="defender">
+                        <h4>Defender</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12" id="defeated">
+                        <h4>Enemies Defeated</h4>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="row">
-            <div class="col-6">
-                    <div class="row">
-                        <div class="col-3">
-                            <p>Obi-Wan Kenobi</p>
-                            <img scr="assets/images/obiwan.jpg" class=".img-fluid" alt="Obi-Wan Kenobi">
-                            <p>120</p>
-                        </div>
-                        <div class="col-3">
-                            <p>Luke Skywalker</p>
-                            <img scr="assets/images/luke.jpg" class=".img-fluid" alt="Luke Skywalker">
-                            <p>100</p>
-                        </div>
-                        <div class="col-3">
-                            <p>Darth Sidious</p>
-                            <img scr="assets/images/sidious.png" class=".img-fluid" alt="Darth Sidious">
-                            <p>150</p>
-                        </div>
-                        <div class="col-3">
-                            <p>Darth Maul</p>
-                            <img scr="assets/images/maul.jpeg" class=".img-fluid" alt="Darth Maul">
-                            <p>180</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <p>Your Character</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <p>Enemies Available To Attack</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <p>Fight Section</p>
-                            <button class="button">Attack</button>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <p>Defender</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12"></div>
-                    </div>
+            <div class="col-12">
+                <button class="button" id="reset">Reset</button>
             </div>
-            <div class="col-6"></div>
         </div>
     </div>
 </body>
