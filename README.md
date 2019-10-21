@@ -1,9 +1,9 @@
 # unit-4-game
 
 ### Live Versions of the Games
-* [Crystal Collector](mkkiyoi.github.io/unit-4-game/crystal-game.html)
+* [Crystal Collector](https://mkkiyoi.github.io/unit-4-game/crystal-game.html)
 
-* [Star Wars Game](mkkiyoi.github.io/unit-4-game)
+* [Star Wars Game](https://mkkiyoi.github.io/unit-4-game)
 
 ### How do the games work?
 
